@@ -488,8 +488,8 @@ function before_start()
 			player_zone.appendChild(node);
 
 
-			node.style.width = Math.floor(100/table_cells) + "%";
-			node.style.height = Math.floor(100/table_cells) + "%";
+			node.style.width = (100/table_cells) + "%";
+			node.style.height = (100/table_cells) + "%";
 
 			who_wall_player[i][j] = node;
 
