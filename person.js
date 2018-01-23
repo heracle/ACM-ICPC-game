@@ -79,6 +79,9 @@ function programmerClass(name, coding_skill, solving_skill, boss_skill, cnt)
 
 	this.move_first = function(who_task)
 	{
+		if(seconds < 0)
+			return;
+
 		var act_task = this.first_task;
 
 		if(act_task == who_task)
@@ -234,7 +237,6 @@ function drop(ev, div_rec) {
     	return;
     }
 
-    debugger;
 
     var p_iterator = person_send.first_task;
 
