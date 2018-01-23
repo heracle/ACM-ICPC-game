@@ -488,8 +488,12 @@ function before_start()
 			player_zone.appendChild(node);
 
 
-			node.style.width = (100/table_cells) + "%";
+			node.style.width = (100/table_cells ) + "%";
 			node.style.height = (100/table_cells) + "%";
+
+			
+			node.style.boxSizing = "border-box";
+			node.style.float = "left";
 
 			who_wall_player[i][j] = node;
 
@@ -523,13 +527,16 @@ function before_start()
 	{
 		for(var j = 0; j < table_cells; j++)
 		{
-			var node = document.createElement("BUTTON");
+			var node = document.createElement("button");
 
 			cpu_zone.appendChild(node);
 
 
-			node.style.width = Math.floor(100/table_cells) + "%";
-			node.style.height = Math.floor(100/table_cells) + "%";
+			node.style.width = (100/table_cells) + "%";
+			node.style.height = (100/table_cells) + "%";
+
+
+
 
 			who_wall_cpu[i][j] = node;
 
