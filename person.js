@@ -9,6 +9,8 @@ function decrement_per_second(who_prog)
 {
 	if(who_prog.first_task == undefined)
 		return;
+	if(seconds < 0)
+		return;
 
 	who_prog.first_task.coding_need -= who_prog.coding_skill;
 	who_prog.first_task.solving_need -= who_prog.solving_skill;

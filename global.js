@@ -79,18 +79,6 @@ function countDown()
 	if(seconds == -1)
 	{
 		alert("Game over! Total Score" + score);
-		if(vect_prog != undefined)
-		{
-			for(var i = 0; i < vect_prog.length; i++)
-			{
-				// who_wall_player[vect_prog[i].x][vect_prog[i].y].removeChild(vect_prog[i].node);
-				vect_prog[i] = undefined;
-
-				clearInterval(vect_prog_setinterv[i]);
-
-				vect_prog_setinterv[i]= undefined;
-			}
-		}
 	}
 
 	if (seconds < 0) {
